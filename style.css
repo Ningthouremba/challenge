@@ -1,0 +1,169 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+header .nav_list{
+width: 100%;
+list-style: none; 
+display: flex; 
+justify-content: center;
+align-items: center;
+gap: 2.5rem;
+text-decoration: none;
+background: rgb(172, 29, 29);
+}
+
+.nav_list > span{
+   background-color: azure;
+   border-radius: 45px;
+}
+
+
+ 
+header li{
+  height: 50px;
+}
+
+header a {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  border-radius: 45%;
+  font-weight: 600;
+  color: black;
+
+
+}
+
+ header a:hover{
+  color:blue;
+}
+
+header span{
+  font-size: 1.3rem;
+  font-weight: 600;
+ 
+}
+
+.about_content > p{
+width: 32rem;
+}
+
+.about_content > h1{
+  color: rgb(216, 19, 19)
+}
+
+.about_content h1 > span{
+  color: rgb(18, 163, 163);
+}
+ 
+
+.projects h1{
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  color: rgb(99, 164, 218);
+  padding-bottom: 3rem;
+  
+}
+
+
+
+.projects-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  gap: 2rem;
+}
+.projec{
+  width: 18rem;
+  position: relative;
+  padding: 0rem 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+  border: 2px solid black;
+  border-radius: 3rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+
+}
+
+.projec:hover{
+  transform: scale(1.02);
+background-color: black;
+color: white;
+}
+
+.projec > img {
+  width: 20.5vw;
+  height: 19vw;
+  border-radius: 2.5rem;
+}
+
+
+ section{
+  min-height: 100vh;
+  padding: 8rem 12%;
+  width: 100%;
+  position: relative;
+} 
+ 
+/* .icon{
+  padding-top: 1.4rem;
+  margin: 3rem;
+  font-size: 1.5rem;
+  color: rgb(65, 65, 194);
+} */
+.icon i{
+  padding-top: 0.8rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  color: rgb(65, 65, 194);
+  
+}
+
+ 
+footer .input_name > input{
+  width: 26rem; 
+  height: 4.2rem;
+  margin: 1.3rem 0rem;
+  border-radius: 45px;
+  padding: 0 12px;
+  font-size: 1rem;
+}
+
+footer > h1{
+  display: flex;
+  justify-content: center;
+  color: rgb(99, 164, 218);
+  padding-bottom: 3rem;
+  
+
+}
+
+.inputs {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+footer{
+  height: 100vh;
+}
+
+.inputs > button{
+  height: 3rem;
+  border-radius: 45px;
+}
+
+

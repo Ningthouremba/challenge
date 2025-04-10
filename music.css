@@ -1,0 +1,46 @@
+
+
+.content{
+    display: grid;
+    place-items: center;
+    justify-content: center;
+
+   
+}
+
+.content img{
+    height: 12rem;
+    width: 12rem;
+    object-fit: cover;
+    border-radius: 70%;
+    
+
+
+}
+
+.album {
+    background-color: aqua;
+    width: 25rem;
+    height: 26rem;
+    place-items: center;
+    align-content: flex-end;
+}
+
+
+
+.audio{
+    margin-bottom: 2rem;
+}
+
+body{
+    height: 100dvh;
+    width: 100%;
+    display: grid;
+    place-items:  center;
+    background: pink;
+    }
+
+    .h > h1{
+        position: relative;
+       left: 1.5rem;
+    }
