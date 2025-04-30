@@ -1,0 +1,151 @@
+#review{
+    border: 2px solid rgb(179, 173, 162);
+    height: 18rem;
+    width: 17rem;
+    padding: 1rem;
+    border-radius: 8px;
+     
+    
+}
+
+.reviews{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#review img{
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+}
+
+#ratings .hover {
+    background: transparent;
+    border: transparent;
+    font-size: 2rem;
+    color: rgb(201, 193, 193);
+}
+
+.hover i:hover{
+    color: yellow;
+}
+.rating #sum{
+    padding: 1rem 2rem; 
+    margin-left: 3rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 11px;
+}
+
+#sum:hover{
+    color: white;
+    background: black
+    
+}
+  
+.name input{
+    margin: 0.6rem 0rem;
+    height: 2.5rem;
+    width: 14rem; 
+}
+
+.rating button{
+    margin: 0.6rem 0rem;
+ 
+}
+
+.review_form{
+   display: flex; 
+   flex-direction: column;
+   align-items: center;
+   
+   
+}
+
+.review_form h1{
+    background: linear-gradient(to left, red, rgb(79, 58, 196), blue);
+    background-clip: text;
+    color: transparent;
+    font-size: 3rem;
+    margin: 0;
+    margin-top: 1.5rem;
+}
+.button{
+    padding: 0.8rem 1.6rem;
+    border-radius: 12px;
+    font-weight: 600;
+}
+
+#review:hover{
+     background-color: black;
+     color: #fff;
+}
+.button:hover{
+    background-color: black;
+    color: #fff;
+}
+
+body .dark_mode{
+    background-color: black;
+    color: #fff;
+}
+
+/* dark-mode-switch */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .switch label {
+    position: absolute;
+    cursor: pointer;
+    background-color: #ccc;
+    border-radius: 34px;
+    transition: background-color 0.4s;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .switch label::after {
+    content: "";
+    position: absolute;
+    height: 26px;
+    width: 26px;
+    right: 3px;   /*start from left*/
+    /*left: 30px; /* start from right */
+    bottom: 4px;
+    background-color: white;
+    transition: transform 0.5s;
+    border-radius: 50%;
+    transform: translateX(-6%); /*initial state left to right */
+  
+    /*transform: translateX(-22px);  /*initial state right to right */
+  
+  }
+  .switch input:checked + label {
+    background-color: #2196F3;
+  }
+  
+  .switch input:checked + label::after {
+   transform: translateX(-26px); /*move left on toggle */
+   /*transform: translateX(-2px); /* move right on toggle */
+  
+  }
+
+  body.dark_mode{
+    background-color: black;
+    color: #fff;
+  }
+
+   /* btn-on-of */
+
+

@@ -1,0 +1,266 @@
+/* Global Reset: removes default margin/padding and sets box-sizing for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Light mode body background and text */
+  body {
+    background-color: #f9f9f9;
+    color: #202020;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Dark mode settings for body */
+  body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  
+  /* Dark mode for header and sidebar */
+  body.dark-mode .header,
+  body.dark-mode .sidebar {
+    background-color: #1e1e1e;
+  }
+  
+  /* Dark mode for video card and background  */
+  body.dark-mode .video-box {
+    background-color: #1e1e1e;
+  }
+  
+  /* Dark mode for input fields  */
+  body.dark-mode .search-bar input,
+  body.dark-mode .comment-box input {
+    background-color: #2a2a2a;
+    color: white;
+  }
+  
+  /* Dark mode for comment button  */
+  body.dark-mode .comment-box button {
+    background-color: #b00;
+  }
+  
+  /* Header styles: sticky top nav bar */
+  .header {
+    background-color: #202020;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  /* Logo styling with animation */
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+    transition: transform 0.3s ease;
+  }
+  
+  .logo:hover {
+    transform: scale(1.1) rotate(-2deg);
+  }
+  
+  /* Animated bounce icon (menu) */
+  .menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    animation: bounce 2s infinite;
+  }
+  
+  /* Dark mode toggle button  */
+  #darkModeToggle {
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    margin-left: auto;
+  }
+  
+  /* Search bar input  */
+  .search-bar input {
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+  }
+  
+  /* Bounce animation keyframes */
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-6px);
+    }
+  }
+  
+  /* User profile icon styling */
+  #profile-icon {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: auto;
+  }
+  
+  /* Dark Mode toggle button */
+  #darkModeToggle {
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    margin-left: auto;
+  }
+  
+  /* Search bar input */
+  .search-bar input {
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+  }
+  
+  /* Sidebar Styling : fixed vertical nav */
+  .sidebar {
+    width: 200px;
+    position: fixed;
+    top: 60px;
+    bottom: 0;
+    background-color: #fff;
+    padding: 20px 0;
+    border-right: 1px solid #ccc;
+  }
+  
+  /* Sidebar item styling */
+  .sidebar-items {
+    padding: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .sidebar-items:hover {
+    background-color: #eee;
+  }
+  
+  /* Video card grid container */
+  .video-grid {
+    margin-left: 220px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .video-box {
+    background-color: #fff;
+    padding: 12px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .video-box:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Thumbnail container: for the time overlay */
+  .thumbnail-wrapper {
+    position: relative;
+  }
+  
+  .thumbnail-wrapper img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  /* Timestamp styling on thumbnail */
+  .timestamp {
+    position: absolute;
+    bottom: 8px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    padding: 2px 6px;
+    font-size: 12px;
+    border-radius: 3px;
+  }
+  
+  /* channel info layout */
+  .channel-info {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .channel-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .channel-info h4 {
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+  
+  .subscribers {
+    font-size: 13px;
+    color: #888;
+  }
+  
+  /* Like/Dislike Button */
+  .video-action {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .video-action button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #e4e4e4;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+  }
+  
+  .video-action button:hover {
+    background-color: #d4d4d4;
+  }
+  
+  /* Comment box layout */
+  .comment-box {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .comment-box input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 14px;
+  }
+  
+  .comment-box button {
+    padding: 8px;
+    border: none;
+    background-color: #ff0000;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .comment-box button:hover {
+    background-color: #cc0000;
+  }

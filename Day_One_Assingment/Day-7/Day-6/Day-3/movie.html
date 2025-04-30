@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Database</title>
+    <link rel="stylesheet" href="movie.css" />
+  </head>
+  <body>
+    <!-- Top Navbar -->
+    <header class="header">
+      <div class="menu-icon">☰</div>
+      <div class="logo">Movie Database</div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search..." />
+      </div>
+      <button id="darkModeToggle">🌙</button>
+      <button id="profile-icon">👤</button>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-items">🏠 Home</div>
+      <div class="sidebar-items">🔥 Trending</div>
+      <div class="sidebar-items">🎵 Music</div>
+      <div class="sidebar-items">📺 Subscription</div>
+    </aside>
+
+    <!-- Main Video Grid -->
+    <main class="video-grid">
+      <!-- Video Card - 01 -->
+      <div class="video-box">
+        <div class="thumbnail-wrapper">
+        <img src="thubnail.png" alt="">
+          <span class="timestamp">12:34</span>
+        </div>
+
+        <div class="channel-info">
+          <img src="thubnail.png" alt="Channel logo" class="channel-logo" />
+          <div>
+            <h4>Sample Video Title</h4>
+            <p>Channel Name · 1.2M views</p>
+            <p class="subscribers">📢 350k Subscribers</p>
+          </div>
+        </div>
+        <div class="video-action">
+          <button class="like-btn">👍🏻 12k</button>
+          <button class="dislike-btn">👎🏻 300</button>
+        </div>
+        <div class="comment-box">
+          <input type="text" placeholder="Add a comment..." />
+          <button>Post</button>
+        </div>
+      </div>
+
+      <!-- Video Card - 02 -->
+      <div class="video-box">
+        <div class="thumbnail-wrapper">
+          <img src="thubnail.png" alt="Video Thumbnail" />
+          <span class="timestamp">09:43</span>
+        </div>
+
+        <div class="channel-info">
+          <img src="thubnail.png" alt="Channel logo" class="channel-logo" />
+          <div>
+            <h4>HTML for beginners</h4>
+            <p>Optivoxx · 4.6M views</p>
+            <p class="subscribers">📢 200k Subscribers</p>
+          </div>
+        </div>
+        <div class="video-action">
+          <button class="like-btn">👍🏻 36k</button>
+          <button class="dislike-btn">👎🏻 250</button>
+        </div>
+        <div class="comment-box">
+          <input type="text" placeholder="Add a comment..." />
+          <button>Post</button>
+        </div>
+      </div>
+
+      <!-- Video Card - 03 -->
+      <div class="video-box">
+        <div class="thumbnail-wrapper">
+          <img src="thubnail.png" alt="Video Thumbnail" />
+          <span class="timestamp">11:26</span>
+        </div>
+
+        <div class="channel-info">
+          <img src="thubnail.png" alt="Channel logo" class="channel-logo" />
+          <div>
+            <h4>Top 10 JavaScript Tips</h4>
+            <p>VoxxLab · 5M views</p>
+            <p class="subscribers">📢 90k Subscribers</p>
+          </div>
+        </div>
+        <div class="video-action">
+          <button class="like-btn">👍🏻 123k</button>
+          <button class="dislike-btn">👎🏻 800</button>
+        </div>
+        <div class="comment-box">
+          <input type="text" placeholder="Add a comment..." />
+          <button>Post</button>
+        </div>
+      </div>
+
+      <!-- Video Card - 04 -->
+      <div class="video-box">
+        <div class="thumbnail-wrapper">
+          <img src="thubnail.png" alt="Video Thumbnail" />
+          <span class="timestamp">49:09</span>
+        </div>
+
+        <div class="channel-info">
+          <img src="thubnail.png" alt="Channel logo" class="channel-logo" />
+          <div>
+            <h4>Advanced React Course</h4>
+            <p>VoxxDevs · 10M views</p>
+            <p class="subscribers">📢 678k Subscribers</p>
+          </div>
+        </div>
+        <div class="video-action">
+          <button class="like-btn">👍🏻 98k</button>
+          <button class="dislike-btn">👎🏻 900</button>
+        </div>
+        <div class="comment-box">
+          <input type="text" placeholder="Add a comment..." />
+          <button>Post</button>
+        </div>
+      </div>
+
+      <!-- Video Card - 05 -->
+      <div class="video-box">
+        <div class="thumbnail-wrapper">
+          <img src="thubnail.png" alt="Video Thumbnail" />
+          <span class="timestamp">12:34</span>
+        </div>
+
+        <div class="channel-info">
+          <img src="thubnail.png" alt="Channel logo" class="channel-logo" />
+          <div>
+            <h4>Full Stack Development</h4>
+            <p>Code To Destiny · 1M views</p>
+            <p class="subscribers">📢 350k Subscribers</p>
+          </div>
+        </div>
+        <div class="video-action">
+          <button class="like-btn">👍🏻 12k</button>
+          <button class="dislike-btn">👎🏻 300</button>
+        </div>
+        <div class="comment-box">
+          <input type="text" placeholder="Add a comment..." />
+          <button>Post</button>
+        </div>
+      </div>
+    </main>
+    <script>
+      // Dark Mode Toggle
+      const toggleBtn = document.getElementById("darkModeToggle");
+      toggleBtn.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+      });
+    </script>
+  </body>
+</html>
+
+
+
+

@@ -71,9 +71,29 @@
 
 }
 
-.btn button{
-   
-    white-space: nowrap;
+.btns {
+white-space: nowrap;
+overflow: auto;
+border: 0;
+
+}
+
+.btns button:hover{
+    background: rgb(221, 204, 204);
+}
+
+
+.btns::-webkit-scrollbar{
+    background: transparent;
+}
+
+.btns button{
+margin: 5px;
+padding: 12px;
+font-weight: 400;
+border-radius: 9px;
+background: #f5f7f3;
+border: transparent;
 }
 
 .header_search button{
@@ -111,6 +131,11 @@ overflow-y: scroll;
     
 }
 
+.sidebar_category span{
+    color: black;
+    font-weight: 500;
+}
+
 .sidebar_category{
     display: flex;
     align-items: center;
@@ -124,7 +149,7 @@ overflow-y: scroll;
 }
 
 .sidebar_category:hover{
-    background-color: antiquewhite;
+    background-color: rgb(161, 159, 156);
     cursor: pointer;
 }
 

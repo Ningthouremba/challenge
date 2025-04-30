@@ -5,25 +5,26 @@
     font-family: "Poppins", sans-serif
 }
 
-#header{
-    position: relative;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 80px;
-    background: rgb(63, 60, 60);
-    align-items: center;
-    justify-content: space-between;
-    text-decoration: none;
-    list-style: none;
+#header h1{
+    color: red;
 }
 
-#nav_list{
+#header{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    padding: 20px 80px;
+    background: rgb(63, 60, 60);
+    text-decoration: none;
+    list-style: none;
+    gap: 6rem;
+}
+
+ #nav_list{
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 3rem;
+    justify-items: center;
+    gap: 2rem;
   
 }
 
@@ -39,7 +40,7 @@
     font-size: 16px;
     color: #fff;
     font-weight: 600;
-    transition: 0.4s ease;
+    transition: 0.8s ease;
 }
 
 #header > a{
@@ -55,7 +56,7 @@
 }
 
 #nav_list li a.active::after,
-#nav_list li a:hover::after{
+#nav_list li a:hover::before{
     content: "";
     width: 40%;
     height: 3px;
@@ -95,9 +96,9 @@
 
 }  
 
-#detail button {
-    background-color: transparent;
-    color: #6851cc;
+#detail #shop {
+    background: transparent;
+    color: #190570;
     margin-top: 14px;
     font-size: 1rem;
     font-weight: 900;
@@ -108,13 +109,21 @@
 #detail button:hover{
     color: rgb(61, 34, 211);
 }
-
+/* 
 .all_item{
     display: flex;
     align-items: center;
     justify-content: center;
     place-items: center;
     flex-wrap: wrap;
+} */
+
+.all_item{
+    display: grid;
+    align-items: center;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, 250px);
+    justify-content: center;
 }
 
 .porducts h1{
@@ -127,13 +136,11 @@
 }
 
 .item{
-    position: relative;
-    width: 16%;
-    margin: 0.6rem;
+    margin: rem;
     padding: 0.6rem;
     border-radius: 12px;
-    border: #40dbdb solid;
-    background: linear-gradient( rgb(235, 207, 207), rgb(82, 185, 82));
+    border: #44c5c5 solid;
+    background: linear-gradient( rgb(209, 162, 162), rgb(82, 185, 82));
 
 }
  
@@ -154,24 +161,117 @@
     height: auto;
 }
 
-.contact{
 
-
-
-}
 .all_contact{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1rem;
-
 }
 
 .contact h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1rem 0rem;
+    padding: 1rem 0rem;  
+}
+
+.contact{
+    background-color: #05032c;
+    width: 100%;
+    color: #fff;
+
+} 
+
+/* Logn in Sign in button */
+ .logn_sign{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    gap: 1rem;
+    justify-content: end;
+}
+
+.logn_sign button{
+    border-radius: 16px;
+    font-weight: 600;
+    border: none;
+    padding: 0.6rem 1rem;
+}  
+
+.logn_sign button:hover{
+    background-color: black;
+    color: #fff;
+}
+
+ /* Logn in Sign in customize */
+.signIn{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* width: 45%;
+    height: 100%; */
+    margin: 2rem;
+    border: #190570 2px solid;
+    border-radius: 1rem;
+    display: none;
+   
+}
+
+.empss{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    
+   
+}
+
+.empss input{
+    font-size: 1rem;
+    height: 3rem;
+    width: 20rem;
+    border-radius: 6px;
+    padding: 0px 14px;
+    color: #05032c;
+    background-color: #fff;
+    border: 1px solid rgb(80, 73, 73);
+    box-shadow: inset 1px 1px 4px 4px rgb(241, 237, 237);
+}
+ 
+.empss h2{
+    padding: 1.4rem;
+    color: black;
+    font-size: 2rem;
+}
+
+.btns{
+    position: relative;
+    display: flex;
+    margin-top: 2rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btns button{
+    background: linear-gradient(to top, rgb(102, 102, 218), rgb(2, 2, 243));
+    color: #fff;
+    padding: rem;
+    height: 2.6rem;
+    width: 18rem;
+    font-weight: 600;
+    border-radius: 25px;
+    border: none;
     
 }
+
+.btns button:hover{
+    background-color: #4f49cc;
+}
+  

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="review.css">
+    <title>Document</title>
+
+</head>
+<body>
+  <div class="switch">
+    <input type="checkbox" id="switch" checked>
+    <label  for="switch"></label>
+  </div>
+
+            <!-- articl -->
+        <section class="reviews">
+          <article id="review">
+            <img src="natural.png" alt=""><span>Deo</span>
+            <div>⭐⭐⭐⭐</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere non, soluta dolorem fuga cupiditate excepturi similique? </p>
+          </article>
+        </section>
+
+              <!-- rating -->
+        <section class="rating">
+           <form class="review_form">
+             <h1>Ratings</h1>
+            <div id="ratings">
+                <button class="hover" type="button" name="rating" value="1"> <i class="fa-solid fa-star"></i>
+                  <button class="hover" type="button" name="rating" value="2"> <i class="fa-solid fa-star"></i>
+                    <button class="hover" type="button" name="rating" value="3"> <i class="fa-solid fa-star"></i>
+                      <button class="hover" type="button" name="rating" value="4"> <i class="fa-solid fa-star"></i>
+                        <button class="hover" type="button" name="rating" value="5"> <i class="fa-solid fa-star"></i>
+
+                        </button>
+                      </button>
+                    </button>
+                  </button>
+                </button> 
+            </div>
+
+            <!-- enter your name -->
+          <div class="name">
+             <input type="text" name="name" id="name" required placeholder="Enter Your name...">
+          </div>
+            <!-- comment -->
+          <div class="comment">
+            <textarea name="comment" id="comment" rows="8" cols="28" placeholder="Your comment.."></textarea>
+          </div>
+               
+                <!-- button -->
+              <button type="submit" class="button">Submit</button> 
+          </form>
+        </section>
+    <script>
+
+    let selectRating = 0;
+
+
+        // Set rating when stars are clicked
+      document.querySelectorAll("#ratings button").forEach(button => {
+      button.addEventListener('click', 
+      function () {
+          selectRating = parseInt(this.value);
+         });
+    });
+
+
+     document.querySelector(".review_form").addEventListener("submit", (event) =>{
+           event.preventDefault();
+    
+  
+    
+          const input = document.getElementById("name")
+
+          const comment = document.getElementById("comment");
+        
+          const newReview = document.createElement("article");
+          newReview.classList.add("review");
+          console.log(newReview);
+
+          
+          
+          const star = '⭐'.repeat(selectRating);
+           newReview.innerHTML = 
+           ` <article id="review">
+            <img src="natural.png" 
+            alt=""><span>${input.value}</span>
+            <div>${star}</div>
+            <p>${comment.value}</p>
+            </article>
+        `
+           ;
+
+           document.querySelector(".reviews").appendChild(newReview);
+
+          //  optionally reset form
+          input.value = '';
+          comment.value = '';
+          selectedRating = 0;
+
+    });
+
+   document.getElementById("switch").addEventListener("click", (event) =>{
+    document.body.classList.toggle("dark_mode");
+   });
+       </script>
+</body>
+
+
+</html>
